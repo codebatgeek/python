@@ -12,12 +12,18 @@ print("day:",day)
 
 #fare
 
-if today.strftime("%a") == 'Mon', 'Tue', 'Wed', 'Thu', 'Fri':
+if today == 'Mon':
 	fare = 100
-elif today.strftime("%a") == 'Sat':
+elif today == 'Tue':
+	fare = 100 
+elif today == 'Wed':
+	fare = 100
+elif today == 'Thu':
+	fare = 100
+elif today == 'Fri':
+	fare = 100               
+elif today == 'Sat':
 	fare = 60
-elif today.strftime("%a") == 'Sun':
-    fare = 80
 else:
-	print("day is not valid")
+    fare = 80
 print("fare:", fare)

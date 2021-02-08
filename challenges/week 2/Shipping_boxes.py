@@ -26,7 +26,7 @@ elif smallbox < totalh <= largebox:
     print("ship 1 large box")
 
 #where a large and a small box are needed
-elif totalh >= largebox:
+elif totalh > largebox:
     #calculate large boxes needed
     x=totalh/largebox
     i= int(x)

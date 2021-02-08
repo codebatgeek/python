@@ -29,13 +29,12 @@ elif smallbox < totalh <= largebox:
 elif totalh >= largebox:
     #calculate large boxes needed
     x=totalh/largebox
-    i = int(x)
-    f = x - int(x)
-    if f == 0:
+    s = totalh%largebox
+    if s == 0:
         print("Shipping" ,i, "boxes")
         print(i, "large")
     else:
-        s = totalh%largebox
+        
         if s > smallbox:
             print("Shipping" ,i+1, "boxes")
             print(i+1, "large" )
